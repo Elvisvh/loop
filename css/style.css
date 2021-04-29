@@ -1,0 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/*HEADER*/
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    height: 800px;
+    z-index: 0;
+}
+
+header > h1{
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-top: 40px;
+    z-index: 1;
+    
+}
+
+
+/*****************************************/
+.ham__menu{
+    display: flex; /*Deactivate the menu bar*/
+}
+.ham__close{
+    display: flex !important; /*Deactivate the close menu*/
+}
+.ham__menu__x{
+    display: none;
+}
+.close__menu__x{
+    display: none;
+}
+
+
+/*****************************************/
+
+
+.ham{
+    margin: 40px 30px auto auto;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+.__nav__{
+    display: none;
+}
+
+.nav__active{
+    display: flex;
+    width: 100%;
+    height: 800px;
+    position: absolute;
+    background: #000;
+}
+ul{
+    width: 100%;
+    text-align: left;
+}
+li{
+    margin-top: 50%;
+    display: flex; /*el displey aqui sera flex*/
+    flex-direction: column;
+}
+
+li > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 22px;
+}
+a{
+    color: #fff;
+    
+}
+
+.header__title{
+    flex-basis: 100%;
+    
+}
+
+.header__title__box{
+    text-align: left;
+    border: 4px solid #fff;
+    padding: 0 20px 0 20px;
+    margin: 0 20px 0 20px;
+}
+
+.title__box__textos{
+    text-transform: uppercase;
+    margin: 20px 0 20px 0;
+    padding: 0;
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 1100px){
+    .ham__menu{
+        display: none;
+    }
+    .__nav__{
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+        margin-right: 10px;
+    }
+    ul{
+        width: 100%;
+        text-align: left;
+    }
+    li{
+        margin-top: 12%;
+        display: flex; /*el displey aqui sera flex*/
+        flex-direction: row;
+    }
+    
+    li > a{
+        text-decoration: none;
+        text-transform: capitalize;
+        padding-top: 20px;
+        padding-left: 20px;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .ham{
+        display: none;
+        
+    }
+
+    header > h1{
+        margin-top: 30px;
+        margin-left: 100px;
+        padding-top: 40px;
+        z-index: 1;
+        
+    }
+
+    .header__title__box{
+        width: 30%;
+        text-align: left;
+        border: 4px solid #fff;
+        padding: 0 20px 0 20px;
+        margin: 0 20px 0 100px;
+    }
+    header{
+        display: flex;
+        flex-wrap: wrap;
+        background-image: url(../images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        height: 800px;
+        z-index: 0;
+    }
+    main{
+        padding: 150px 100px !important;
+    }
+    .part-1{
+        display: flex;
+        flex-direction: row !important;
+        position: relative;
+    }
+    
+    .part-1__imagen > img{
+        width: 100% !important;
+        object-fit: inherit !important;
+    }
+    .part-1__textos{
+        width: 25%;
+        height: 50%;
+        text-align: center;
+        font-weight: 300; 
+        margin-top: 50px;
+        position: absolute;
+        background: #fff;
+        left: 30%;
+        top: 60%;
+        
+    }
+
+    .part-1__textos__maintitle{
+        margin-top: 40px;
+    }
+        
+    
+}
+/*MAIN*/
+main{
+    padding: 100px 25px;
+}
+/*SECTION 1*/
+
+.part-1{
+    display: flex;
+    flex-direction: column;
+}
+
+.part-1__imagen > img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.part-1__textos{
+    text-align: center;
+    font-weight: 300; 
+    margin-top: 50px;
+}
+
+.part-1__textos > h1{
+    text-transform: uppercase;
+    
+}
+.part-1__textos > p {
+    margin-top: 20px;
+    font-size: large;
+    color: #909090;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+/*SECTION 2*/
+
+.part-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.port{
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+}
+.port__img{
+    position: relative;
+    margin-top: 10px;
+    
+}
+.fondo{
+    background: #000;
+    z-index: 4000;
+}
+
+.port__img > img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.port__img__cover{
+    width: 100%;
+    height: 100%;
+    z-index: 3001;
+}
+.port__img > p{
+    color: #fff;
+    position: absolute;
+    z-index: 1000;
+    top: 50%;
+    left: 5%;
+}
+
+.part-2__header > h1{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 50px;
+    
+}
+
+.seeall{
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.seeall > p{
+    border: 2px solid rgb(133, 133, 133);
+    display: inline;
+    padding: 10px 50px;
+}
+
+/*FOOTER*/
+
+footer{
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer__textos{
+    padding: 50px;
+}
+
+.footer__textos h1{
+    padding-bottom: 30px;
+}
+
+.footer__textos > p{
+    padding: 10px;
+    font-weight: 600;
+}
+
+.footer__iconos > img{
+    width: 5%;
+
+}
+
+.footer__rights{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
