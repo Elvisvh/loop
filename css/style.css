@@ -159,6 +159,10 @@ main{
     z-index: 4000;
 }
 
+.desktop{
+    display: none;
+}
+
 .port__img > img{
     width: 100%;
     object-fit: cover;  
@@ -211,11 +215,11 @@ footer{
     padding: 50px;
 }
 
-.footer__textos h1{
+.footer__title{
     padding-bottom: 30px;
 }
 
-.footer__textos > p{
+.footer__p > p{
     padding: 10px;
     font-weight: 600;
 }
@@ -330,16 +334,27 @@ footer{
         /*SECTION 2*/
 
     .part-2{
-        display: flex;
-        flex-direction: column;
         margin-top: 100px;
     }
     .port{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr; /*repeat(auto-fill, minmax(200px,2fr));*/
+        grid-template-rows: 1fr 1fr;
         z-index: 0;
+        flex-wrap: wrap;
     }
+
+    .mobile{
+        display: none;
+    }
+
+    .desktop{
+        display: inline-block;
+    }
+
     .port__img{
+        width: 60%;
+        height: 400px;
         position: relative;
         margin-top: 10px;
         
@@ -350,8 +365,9 @@ footer{
     }
 
     .port__img > img{
-        width: 100%;
-        object-fit: cover;  
+        width: 150%;
+        height: 100%; 
+        object-fit: cover;
     }
 
     .port__img__cover{
@@ -363,20 +379,26 @@ footer{
         color: #fff;
         position: absolute;
         z-index: 1000;
-        top: 50%;
-        left: 5%;
+        top: 85%;
+        left: 10%;
     }
 
     .header-galery{
-        display: flex;
+        display: block;
     }
 
     .header-galery > h1{
+        display: inline-block;
         text-align: left;
     }
 
     .seeall1{
-        display: flex;
+        display: inline-block;
+        float: right;
+
+    }
+
+    .seeall1 > p{
         background-color: #000;
         color: #fff;
         text-align: center;
@@ -387,6 +409,48 @@ footer{
 
     .seeall{
         display: none;
+    }
+
+    /*FOOTER*/
+
+    footer{
+        background: #000;
+        color: #fff;
+        text-align: center;
+    }
+
+    .footer__textos{
+        display: inline-block;
+        width: 50%;
+        padding: 50px;
+        text-align: left;
+    }
+
+    .footer__title{
+        display: block;
+        margin-left: 10px;
+        padding-bottom: 30px;
+    }
+
+    .footer__p > p{
+        display: inline-block;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .footer__content{
+        display: inline-block;
+        text-align: right;
+    }
+
+    .footer__iconos > img{
+        width: 10%;
+
+    }
+
+    .footer__rights{
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
 
